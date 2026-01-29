@@ -19,14 +19,17 @@
 
 ## 📋 Índice
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Questões Respondidas](#questões-respondidas)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Instalação](#instalação)
-- [Estrutura do Projeto](#estrutura-do-projeto)
-- [Demonstrações](#demonstrações)
-- [API REST](#api-rest)
-- [Testes](#testes)
+- [🌟 Destaques](#-destaques)
+- [🎯 Sobre o Projeto](#-sobre-o-projeto)
+- [📝 Questões Respondidas](#-questões-respondidas)
+- [🛠 Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [🚀 Instalação](#-instalação)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🎬 Demonstrações](#-demonstrações)
+- [🌐 API REST](#-api-rest)
+- [🧪 Testes](#-testes)
+- [🔑 Conceitos Principais](#-conceitos-principais-implementados)
+- [🎓 Diferenciais Técnicos](#-diferenciais-técnicos)
 
 ---
 
