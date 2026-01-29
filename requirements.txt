@@ -1,0 +1,7 @@
+django>=5.0
+djangorestframework
+django-extensions
+ipython
+pytest
+pytest-django
+black
