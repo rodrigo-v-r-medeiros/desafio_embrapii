@@ -139,6 +139,6 @@ COMO RESOLVER?
 IMPACTO REAL:
 Com 5 projetos: 6 queries → 2 queries (redução de 67%)
 Com 100 projetos: 101 queries → 2 queries (redução de 98%)
-Em produção com milhares de registros, a diferença é DRAMÁTICA!
+Em produção com milhares de registros, a diferença é GIGANTE!
 """)
 print("=" * 70)
