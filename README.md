@@ -3,8 +3,17 @@
 [![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
 [![Django](https://img.shields.io/badge/Django-6.0-green.svg)](https://www.djangoproject.com/)
 [![DRF](https://img.shields.io/badge/DRF-3.16-red.svg)](https://www.django-rest-framework.org/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-Sistema Django completo desenvolvido para o Desafio Técnico Embrapii, demonstrando boas práticas de desenvolvimento, otimizações ORM, service layer, validações robustas e organização de código.
+> **Sistema Django completo desenvolvido para o processo seletivo Embrapii, demonstrando domínio em otimizações ORM, arquitetura de software, validações robustas e boas práticas de desenvolvimento.**
+
+## 🌟 Destaques
+
+- ⚡ **67% de redução** em queries ao banco (N+1 resolvido com demonstração quantificada)
+- 🏗️ **Service Layer robusto** com state machine e auditoria completa
+- ✅ **Validações em 4 camadas** (Model, Serializer, Service, View)
+- 📊 **3 scripts executáveis** demonstrando cada solução técnica
+- 📚 **Documentação completa** com 1493+ linhas de explicações detalhadas (ver [RESPOSTAS.md](RESPOSTAS.md))
 
 ---
 
@@ -23,14 +32,24 @@ Sistema Django completo desenvolvido para o Desafio Técnico Embrapii, demonstra
 
 ## 🎯 Sobre o Projeto
 
-Este projeto foi desenvolvido para responder às questões técnicas do processo seletivo Embrapii, implementando um sistema completo de gestão de projetos e tarefas com:
+Este projeto implementa um **sistema completo de gestão de projetos e tarefas** desenvolvido como resposta ao desafio técnico Embrapii. Demonstra conhecimento avançado em Django, arquitetura de software e boas práticas de desenvolvimento.
 
-- ✅ Otimizações de ORM (N+1 queries)
-- ✅ Service Layer com regras de negócio
-- ✅ Modelagem robusta com Django ORM
-- ✅ API REST com validações em múltiplas camadas
-- ✅ Admin Django configurado
-- ✅ Scripts de demonstração para cada questão
+### ✨ Funcionalidades Implementadas
+
+- ✅ **Otimização de queries** com redução comprovada de 67% (N+1 queries resolvido)
+- ✅ **Service Layer** centralizado com state machine e validações de negócio
+- ✅ **Modelagem estratégica** com índices compostos e relacionamentos otimizados
+- ✅ **API REST completa** com Django REST Framework
+- ✅ **Validações em múltiplas camadas** (sintática, semântica, regras de negócio)
+- ✅ **Sistema de auditoria** rastreando todas as transições de status
+- ✅ **Admin Django** totalmente configurado
+- ✅ **Scripts executáveis** demonstrando cada solução técnica
+
+### 📖 Documentação Completa
+
+Para respostas detalhadas das 4 questões técnicas com explicações aprofundadas, exemplos de código e justificativas de decisões arquiteturais, consulte:
+
+**👉 [RESPOSTAS.md](RESPOSTAS.md)** - Documento técnico completo (1493 linhas)
 
 ---
 
@@ -116,10 +135,10 @@ python manage.py shell < scripts/demo_validacoes_api.py
 
 ```bash
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/seu-usuario/embrappi.git
 cd embrappi
 
-# 2. Crie um ambiente virtual
+# 2. Crie e ative o ambiente virtual
 python3 -m venv venv
 source venv/bin/activate
 
@@ -129,10 +148,15 @@ pip install -r requirements.txt
 # 4. Execute as migrações
 python manage.py migrate
 
-# 5. (Opcional) Crie um superusuário
+# 5. (Opcional) Crie um superusuário para acessar o admin
 python manage.py createsuperuser
 
-# 6. Inicie o servidor
+# 6. Execute as demonstrações (opcional, mas recomendado)
+python manage.py shell < scripts/demo_nplus1.py
+python manage.py shell < scripts/demo_task_workflow.py
+python manage.py shell < scripts/demo_validacoes_api.py
+
+# 7. Inicie o servidor
 python manage.py runserver
 ```
 
@@ -140,10 +164,10 @@ python manage.py runserver
 
 ```powershell
 # 1. Clone o repositório
-git clone <url-do-repositorio>
+git clone https://github.com/seu-usuario/embrappi.git
 cd embrappi
 
-# 2. Crie um ambiente virtual
+# 2. Crie e ative o ambiente virtual
 python -m venv venv
 venv\Scripts\activate
 
@@ -153,10 +177,15 @@ pip install -r requirements.txt
 # 4. Execute as migrações
 python manage.py migrate
 
-# 5. (Opcional) Crie um superusuário
+# 5. (Opcional) Crie um superusuário para acessar o admin
 python manage.py createsuperuser
 
-# 6. Inicie o servidor
+# 6. Execute as demonstrações (opcional, mas recomendado)
+python manage.py shell < scripts/demo_nplus1.py
+python manage.py shell < scripts/demo_task_workflow.py
+python manage.py shell < scripts/demo_validacoes_api.py
+
+# 7. Inicie o servidor
 python manage.py runserver
 ```
 
@@ -311,17 +340,36 @@ python manage.py test_nplus1
 - **Serializer:** Validações sintáticas e semânticas
 - **Service:** Regras de negócio complexas
 - **View:** Permissões e autorização
+🎓 Diferenciais Técnicos
 
-### 4. Separação de Responsabilidades
-- Models: Estrutura de dados
-- Serializers: Validação e transformação
-- Services: Lógica de negócio
-- Views: Orquestração e API
-- Admin: Interface administrativa
+Este projeto demonstra:
+
+- **Performance:** Otimização comprovada com métricas reais (67% redução de queries)
+- **Arquitetura:** Separação clara de responsabilidades (SOLID principles)
+- **Qualidade:** Código limpo, documentado e seguindo PEP 8
+- **Testabilidade:** Scripts demonstráveis e estrutura preparada para testes
+- **Profissionalismo:** Documentação completa, commits organizados, estrutura escalável
+
+## 📚 Documentação Adicional
+
+- **[RESPOSTAS.md](RESPOSTAS.md)** - Respostas detalhadas das 4 questões técnicas
+- **[scripts/README.md](scripts/README.md)** - Guia de execução dos scripts de demonstração
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Rodrigo** como parte do Desafio Técnico Embrapii - Janeiro 2026
 
 ---
 
-## 👨‍💻 Autor
+## 📝 Notas
+
+Este projeto foi desenvolvido especificamente para demonstrar conhecimentos técnicos em:
+- Otimização de ORM e resolução de N+1 queries
+- Arquitetura de software com Service Layer
+- Modelagem de dados estratégica
+- Validações robustas em múltiplas camadas
+
+Todas as implementações são funcionais e podem ser executadas localmente
 
 **Rodrigo**
 
